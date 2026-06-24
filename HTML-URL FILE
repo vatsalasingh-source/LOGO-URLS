@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Gallery</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.logo-card:hover {
+    transform: translateY(-4px);
+}
+
+.logo-card img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Logo Gallery</h1>
+
+<div class="logo-grid">
+    <div class="logo-card">
+        <img src="https://www.nva.com/favicon.ico" alt="NVA Logo">
+    </div>
+
+    <div class="logo-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-ROpfqSz8e9_3cSTGfwdThEOXPh_9S2dL7OpN4gbXQ&s=10" alt="Logo 2">
+    </div>
+
+    <div class="logo-card">
+        <img src="https://media.designrush.com/inspirations/719081/conversions/_1512514369_89_muni-logo-preview.jpg" alt="Muni Logo">
+    </div>
+</div>
+
+</body>
+</html>
